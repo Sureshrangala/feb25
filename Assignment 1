@@ -1,0 +1,18 @@
+def function(x):
+    array = []
+
+    for num in x:
+        if num <= 1:
+            continue
+        for i in range(2, num):
+            if (num % i) == 0:
+                break
+        else:
+            print(num)
+            array.append(num)
+
+    return len(array)
+
+ln=[]
+z = [1,2,3,4,5]
+print("the count is:",function(z))
